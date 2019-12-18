@@ -176,7 +176,41 @@ a:hover {
     color: red;
 }
 /* For mobile phones: */
-@media screen and (max-width: 600px) {
-	.firstRow .secondRow .thirdRow {
-	  display: flex;
-	  flex-direction: column;
+@media (max-width: 500px) {
+    #container{
+        width:550px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        border-bottom: solid 1px black;
+        justify-content: center;
+        text-align: center;
+        border-bottom: solid 1px black;
+        margin: 10px;
+        padding: 10px 0px;
+    }
+    nav a {
+        border-bottom: solid 1px black;
+        margin: 10px;
+        padding: 10px 0px;
+    }
+    .demand {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        text-align: center;  
+    }
+    .logo2 {
+        display: none;
+    }
+    #featuresAbout {
+        display: flex;
+        flex-direction: column;
+    }
+    .servicesProductvison{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
