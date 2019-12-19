@@ -89,6 +89,9 @@ header nav a {
 a {
     text-decoration: none;
 }
+a:hover {
+    color: red;
+}
 .demand {
     display: flex;
     flex-direction: column;
