@@ -208,7 +208,12 @@ a:hover {
         margin-left: auto;
         margin-right: auto;
         width: auto;
+        
     }
+    #servicesOne{
+        border-top: solid black 1px;
+    }
+}
     .demand {
        display: flex;
        flex-direction: column;
