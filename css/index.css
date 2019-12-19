@@ -70,20 +70,36 @@ h1, h2, h3, h4, h5 {
 	
 }
 
+.navBar {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
 header nav{
-	display: flex;
+    display: flex;
+    flex-direction: ;
     justify-content: space-around;
     padding-top: 30px;
     color: gray;	
 }
-.demand {
-	display: flex;
-	padding: 40px 0;
+header nav a {
+    width: 120px;
+    color: black;
 }
-.button{
-	display: flex;
-	flex-direction: column;
-	
+a {
+    text-decoration: none;
+}
+.demand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+ }
+.firstPic{
+    display: flex;
+    border-bottom: solid 1px;
+    margin: 20px 0px;
+    padding: 30px;
 }
 #innovation {
 	font-size: 70px;
@@ -166,40 +182,37 @@ header nav{
 	text-align: center;
 	font-size: 12px;
 }
-a {
-	text-decoration: none;
-}
-a:link, a:visited {
-    color: gray;
-}
-a:hover {
-    color: red;
-}
 /* For mobile phones: */
 @media (max-width: 500px) {
-    #container{
-        width:550px;
-    }
+   .navBar{
+       display: flex;
+       flex-direction: column;
+   }
     nav {
         display: flex;
-        flex-direction: column;
-        border-bottom: solid 1px black;
+        flex-direction: column-reverse;
         justify-content: center;
         text-align: center;
-        border-bottom: solid 1px black;
-        margin: 10px;
-        padding: 10px 0px;
     }
-    nav a {
+    header nav a {
         border-bottom: solid 1px black;
-        margin: 10px;
+        margin: auto;
         padding: 10px 0px;
+        width: 100%;
+    }
+    .logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
     }
     .demand {
-        display: flex;
-        flex-direction: column;
-        justify-content: center; 
-        text-align: center;  
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-left: auto;
+       margin-right: auto;
+       border: none;
     }
     .logo2 {
         display: none;
@@ -207,10 +220,63 @@ a:hover {
     #featuresAbout {
         display: flex;
         flex-direction: column;
+        margin: 20px;
     }
     .servicesProductvison{
         display: flex;
         flex-direction: column;
+        margin: 20px;
+        border-bottom: solid black;
+    }
+    #about {
+        margin-top: 20px;
+    }
+    .middle-img {
+        width: 96%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    #product {
+        margin: 20px 0px;
+    }
+    #contact {
+        margin: 20px;
     }
 
+}
+/* For tablets */
+@media (max-width: 800px) {
+    #container {
+        margin: 0 30px;
+    }
+    .navBar {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+    .demand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        margin-left: 65px;
+     }
+     .logo2 {
+        display: none;
+    }
+    #features {
+        margin-right: 10px;
+    }
+    .middle-img {
+        width: 96%;
+    }
+   
+    
 }
