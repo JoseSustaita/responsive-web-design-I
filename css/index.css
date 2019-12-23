@@ -213,7 +213,7 @@ a:hover {
     #servicesOne{
         border-top: solid black 1px;
     }
-}
+
     .demand {
        display: flex;
        flex-direction: column;
@@ -269,6 +269,10 @@ a:hover {
         margin-right: auto;
         width: auto;
     }
+    .logo2 {
+        display: none;
+    }
+    
     .demand {
         display: flex;
         flex-direction: column;
@@ -276,9 +280,7 @@ a:hover {
         margin: 20px;
         margin-left: 65px;
      }
-     .logo2 {
-        display: none;
-    }
+   
     #features {
         margin-right: 10px;
     }
